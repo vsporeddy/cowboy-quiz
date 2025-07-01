@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontier Spirit: A Cowboy Personality Quiz</title>
+    <!-- Tailwind CSS for utility classes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for the western theme -->
+    <link href="https://fonts.googleapis.com/css2?family=Rye&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Link to your custom stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="p-4">
+
+    <div id="quiz-container" class="quiz-container p-6 sm:p-10">
+        <!-- Title and Intro -->
+        <div id="intro-container" class="text-center">
+            <h1 class="title-font text-4xl sm:text-5xl md:text-6xl text-amber-900 mb-4">Frontier Spirit</h1>
+            <p class="mb-6 text-lg">You're a drifter, headin' west to make your own destiny with just ten dollars to your name. You happen upon a small, quiet town called Dust Devil Gulch. What happens next is up to you, partner.</p>
+            <button id="start-btn" class="bg-amber-800 hover:bg-amber-900 text-white font-bold py-3 px-8 rounded-lg shadow-lg text-xl transition duration-300">Begin Your Journey</button>
+        </div>
+
+        <!-- Question Area -->
+        <div id="question-container" class="hidden">
+            <div id="stats-bar" class="stats-bar p-2 mb-6 rounded-md text-center">
+                <span id="money-stat" class="font-bold text-lg text-green-800"></span>
+            </div>
+            <p id="question-text" class="text-xl mb-6 font-semibold"></p>
+            <div id="choices-container" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Choices will be dynamically inserted by script.js -->
+            </div>
+             <div id="message-box" class="mt-4 p-3 text-center rounded-md hidden"></div>
+        </div>
+
+        <!-- Result Area -->
+        <div id="result-container" class="hidden text-center">
+             <h2 class="text-4xl sm:text-5xl text-amber-900 mb-4">Your Frontier Spirit is...</h2>
+             <h3 id="result-title" class="title-font text-3xl sm:text-4xl text-amber-800 mb-4"></h3>
+             <p id="result-description" class="text-lg mb-6"></p>
+             <button id="restart-btn" class="bg-amber-800 hover:bg-amber-900 text-white font-bold py-3 px-8 rounded-lg shadow-lg text-xl transition duration-300">Start a New Life</button>
+        </div>
+    </div>
+
+    <!-- Link to your JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

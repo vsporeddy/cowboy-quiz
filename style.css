@@ -1,0 +1,56 @@
+/* General body styling */
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #f5eadd; /* Parchment color */
+    background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+    color: #4a2c2a; /* Dark brown text */
+}
+
+/* Custom font for titles */
+.title-font {
+    font-family: 'Rye', cursive;
+}
+
+/* Main container for the quiz */
+.quiz-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    background-color: rgba(253, 246, 227, 0.8); /* Lighter parchment with some transparency */
+    border: 5px solid #8B4513; /* SaddleBrown border */
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3), inset 0 0 15px rgba(0,0,0,0.2);
+    backdrop-filter: blur(2px);
+}
+
+/* Styling for the choice buttons */
+.choice-button {
+    transition: all 0.3s ease;
+    border-width: 2px;
+}
+
+/* Hover effect for choice buttons that are not disabled */
+.choice-button:hover:not(:disabled) {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    background-color: #d2b48c; /* Tan */
+}
+
+/* Styling for disabled buttons */
+.choice-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+    background-color: #e0e0e0;
+    border-color: #9e9e9e;
+}
+
+/* Top bar that displays player stats (like money) */
+.stats-bar {
+    background-color: rgba(0,0,0,0.1);
+    border-top: 2px solid #8B4513;
+    border-bottom: 2px solid #8B4513;
+}
+
+/* Ensure the result title uses the custom font */
+#result-container h2 {
+     font-family: 'Rye', cursive;
+}
